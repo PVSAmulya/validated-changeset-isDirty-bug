@@ -1,0 +1,34 @@
+{{yield}}
+
+<form style="padding:1em">
+<div>
+  <label>model.firstName: {{model.firstName}}</label>
+</div>
+<div style="padding-top:1em">
+  <label>changeset.isDirty: {{changeset.isDirty}}</label>
+</div>
+<div>
+  <label>changeset.isPristine: {{changeset.isPristine}}</label>
+</div>
+<div>
+  <label>changeset.firstName: {{changeset.firstName}}</label>
+</div>
+<div style="padding-top:1em">
+  <label>Computed isDirty: {{isDirty}}</label>
+</div>
+<div>
+  <label>Computed isPristine: {{isPristine}}</label>
+</div>
+<div>
+  <label>Computed firstName: {{firstName}}</label>
+</div>
+<div style="padding-top:1em">
+  <label>First Name: </label>
+  <Input @value={{changeset.firstName}} />
+</div>
+<div>
+  <label>Last Name: </label>
+  <Input @value={{changeset.lastName}} />
+</div>
+
+</form>
